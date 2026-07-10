@@ -1,7 +1,6 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
-  pull_request:
   # build dev site on merged pushes
   push:
     branches: [main, master]
@@ -25,7 +24,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install pngquant
         run: |
@@ -56,7 +55,7 @@ jobs:
       - name: Build site
         run: |
             pkgdown::build_site_github_pages(
-              lazy = TRUE,
+              lazy = FALSE,
               run_dont_run = TRUE,
               new_process = TRUE
             )
@@ -65,6 +64,6 @@ jobs:
       - name: Deploy to GitHub pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          clean: true
+          clean: false 
           branch: gh-pages
           folder: docs
