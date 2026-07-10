@@ -50,6 +50,9 @@ jobs:
             any::BH
             any::RcppEigen
 
+      - name: Install CmdStan
+        run: Rscript -e "cmdstanr::install_cmdstan()"
+
       - name: Build site
         run: |
             pkgdown::build_site_github_pages(
