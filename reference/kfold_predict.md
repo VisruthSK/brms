@@ -62,8 +62,8 @@ fit <- brm(count ~ zBase * Trt + (1|patient),
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
 #> Chain 1: 
-#> Chain 1: Gradient evaluation took 5.1e-05 seconds
-#> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.51 seconds.
+#> Chain 1: Gradient evaluation took 5e-05 seconds
+#> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.5 seconds.
 #> Chain 1: Adjust your expectations accordingly!
 #> Chain 1: 
 #> Chain 1: 
@@ -80,9 +80,9 @@ fit <- brm(count ~ zBase * Trt + (1|patient),
 #> Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 1: 
-#> Chain 1:  Elapsed Time: 2.063 seconds (Warm-up)
-#> Chain 1:                2.036 seconds (Sampling)
-#> Chain 1:                4.099 seconds (Total)
+#> Chain 1:  Elapsed Time: 2.051 seconds (Warm-up)
+#> Chain 1:                2.056 seconds (Sampling)
+#> Chain 1:                4.107 seconds (Total)
 #> Chain 1: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
@@ -105,9 +105,9 @@ fit <- brm(count ~ zBase * Trt + (1|patient),
 #> Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 2: 
-#> Chain 2:  Elapsed Time: 2.165 seconds (Warm-up)
-#> Chain 2:                1.506 seconds (Sampling)
-#> Chain 2:                3.671 seconds (Total)
+#> Chain 2:  Elapsed Time: 2.151 seconds (Warm-up)
+#> Chain 2:                1.499 seconds (Sampling)
+#> Chain 2:                3.65 seconds (Total)
 #> Chain 2: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 3).
@@ -130,9 +130,9 @@ fit <- brm(count ~ zBase * Trt + (1|patient),
 #> Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 3: 
-#> Chain 3:  Elapsed Time: 2.18 seconds (Warm-up)
-#> Chain 3:                1.568 seconds (Sampling)
-#> Chain 3:                3.748 seconds (Total)
+#> Chain 3:  Elapsed Time: 2.178 seconds (Warm-up)
+#> Chain 3:                1.554 seconds (Sampling)
+#> Chain 3:                3.732 seconds (Total)
 #> Chain 3: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 4).
@@ -155,9 +155,9 @@ fit <- brm(count ~ zBase * Trt + (1|patient),
 #> Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 4: 
-#> Chain 4:  Elapsed Time: 2.109 seconds (Warm-up)
-#> Chain 4:                1.585 seconds (Sampling)
-#> Chain 4:                3.694 seconds (Total)
+#> Chain 4:  Elapsed Time: 2.095 seconds (Warm-up)
+#> Chain 4:                1.582 seconds (Sampling)
+#> Chain 4:                3.677 seconds (Total)
 #> Chain 4: 
 
 # perform k-fold cross validation

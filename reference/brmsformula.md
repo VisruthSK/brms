@@ -379,9 +379,9 @@ is primarily useful in combination with the `subset` addition and
 For custom families, it is possible to pass an arbitrary number of real
 and integer vectors via the addition terms `vreal` and `vint`,
 respectively. An example is provided in
-[`vignette('brms_customfamilies')`](https://paulbuerkner.com/brms/articles/brms_customfamilies.md).
-To pass multiple vectors of the same data type, provide them separated
-by commas inside a single `vreal` or `vint` statement.
+`vignette('brms_customfamilies')`. To pass multiple vectors of the same
+data type, provide them separated by commas inside a single `vreal` or
+`vint` statement.
 
 Multiple addition terms of different types may be specified at the same
 time using the `+` operator. For example, the formula

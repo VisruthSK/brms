@@ -2,7 +2,6 @@
 <url><loc>https://paulbuerkner.com/brms/404.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/ISSUE_TEMPLATE.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/LICENSE-text.html</loc></url>
-<url><loc>https://paulbuerkner.com/brms/articles/brms_customfamilies.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/articles/brms_distreg.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/articles/brms_families.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/articles/brms_missings.html</loc></url>
@@ -34,6 +33,7 @@
 <url><loc>https://paulbuerkner.com/brms/reference/VonMises.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/reference/Wiener.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/reference/ZeroInflated.html</loc></url>
+<url><loc>https://paulbuerkner.com/brms/reference/ZeroOneInflated.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/reference/add_criterion.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/reference/add_ic.html</loc></url>
 <url><loc>https://paulbuerkner.com/brms/reference/add_rstan_model.html</loc></url>

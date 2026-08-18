@@ -5,9 +5,8 @@ Get draws of a distributional parameter from a `brmsprep` or
 custom families or packages depending on brms. This function lets
 callers easily handle both the case when the distributional parameter is
 predicted directly, via a (non-)linear predictor or fixed to a constant.
-See the vignette
-[`vignette("brms_customfamilies")`](https://paulbuerkner.com/brms/articles/brms_customfamilies.md)
-for an example use case.
+See the vignette `vignette("brms_customfamilies")` for an example use
+case.
 
 ## Usage
 

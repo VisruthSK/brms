@@ -5,8 +5,6 @@
 These vignettes demonstrate how to use various features of the **brms**
 package.
 
-- [Define Custom Response Distributions with
-  brms](https://paulbuerkner.com/brms/articles/brms_customfamilies.md):
 - [Estimating Distributional Models with
   brms](https://paulbuerkner.com/brms/articles/brms_distreg.md):
 - [Parameterization of Response Distributions in
