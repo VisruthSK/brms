@@ -120,8 +120,8 @@ fit <-  brm(count ~ zAge + zBase * Trt
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
 #> Chain 1: 
-#> Chain 1: Gradient evaluation took 4.5e-05 seconds
-#> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.45 seconds.
+#> Chain 1: Gradient evaluation took 6.2e-05 seconds
+#> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.62 seconds.
 #> Chain 1: Adjust your expectations accordingly!
 #> Chain 1: 
 #> Chain 1: 
@@ -138,15 +138,15 @@ fit <-  brm(count ~ zAge + zBase * Trt
 #> Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 1: 
-#> Chain 1:  Elapsed Time: 4.519 seconds (Warm-up)
-#> Chain 1:                2.447 seconds (Sampling)
-#> Chain 1:                6.966 seconds (Total)
+#> Chain 1:  Elapsed Time: 3.841 seconds (Warm-up)
+#> Chain 1:                2.081 seconds (Sampling)
+#> Chain 1:                5.922 seconds (Total)
 #> Chain 1: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
 #> Chain 2: 
-#> Chain 2: Gradient evaluation took 3.9e-05 seconds
-#> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.39 seconds.
+#> Chain 2: Gradient evaluation took 4.7e-05 seconds
+#> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.47 seconds.
 #> Chain 2: Adjust your expectations accordingly!
 #> Chain 2: 
 #> Chain 2: 
@@ -163,15 +163,15 @@ fit <-  brm(count ~ zAge + zBase * Trt
 #> Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 2: 
-#> Chain 2:  Elapsed Time: 4.476 seconds (Warm-up)
-#> Chain 2:                2.471 seconds (Sampling)
-#> Chain 2:                6.947 seconds (Total)
+#> Chain 2:  Elapsed Time: 3.808 seconds (Warm-up)
+#> Chain 2:                2.114 seconds (Sampling)
+#> Chain 2:                5.922 seconds (Total)
 #> Chain 2: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 3).
 #> Chain 3: 
-#> Chain 3: Gradient evaluation took 3.9e-05 seconds
-#> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.39 seconds.
+#> Chain 3: Gradient evaluation took 4.1e-05 seconds
+#> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.41 seconds.
 #> Chain 3: Adjust your expectations accordingly!
 #> Chain 3: 
 #> Chain 3: 
@@ -188,15 +188,15 @@ fit <-  brm(count ~ zAge + zBase * Trt
 #> Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 3: 
-#> Chain 3:  Elapsed Time: 4.524 seconds (Warm-up)
-#> Chain 3:                2.456 seconds (Sampling)
-#> Chain 3:                6.98 seconds (Total)
+#> Chain 3:  Elapsed Time: 3.757 seconds (Warm-up)
+#> Chain 3:                2.087 seconds (Sampling)
+#> Chain 3:                5.844 seconds (Total)
 #> Chain 3: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 4).
 #> Chain 4: 
-#> Chain 4: Gradient evaluation took 3.9e-05 seconds
-#> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.39 seconds.
+#> Chain 4: Gradient evaluation took 3.8e-05 seconds
+#> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.38 seconds.
 #> Chain 4: Adjust your expectations accordingly!
 #> Chain 4: 
 #> Chain 4: 
@@ -213,9 +213,9 @@ fit <-  brm(count ~ zAge + zBase * Trt
 #> Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 4: 
-#> Chain 4:  Elapsed Time: 4.145 seconds (Warm-up)
-#> Chain 4:                2.459 seconds (Sampling)
-#> Chain 4:                6.604 seconds (Total)
+#> Chain 4:  Elapsed Time: 3.525 seconds (Warm-up)
+#> Chain 4:                2.08 seconds (Sampling)
+#> Chain 4:                5.605 seconds (Total)
 #> Chain 4: 
 
 pp_check(fit)  # shows dens_overlay plot by default
@@ -235,12 +235,12 @@ pp_check(fit, type = "rootogram")
 
 pp_check(fit, type = "loo_pit")
 #> Error in pp_check.brmsfit(fit, type = "loo_pit"): Type 'loo_pit' is not a valid ppc type. Valid types are:
-#> 'bars', 'bars_grouped', 'boxplot', 'dens', 'dens_overlay', 'dens_overlay_grouped', 'dots', 'ecdf_overlay', 'ecdf_overlay_grouped', 'error_binned', 'error_hist', 'error_hist_grouped', 'error_scatter', 'error_scatter_avg', 'error_scatter_avg_grouped', 'error_scatter_avg_vs_x', 'freqpoly', 'freqpoly_grouped', 'hist', 'intervals', 'intervals_grouped', 'km_overlay', 'km_overlay_grouped', 'loo_intervals', 'loo_pit_ecdf', 'loo_pit_overlay', 'loo_pit_qq', 'loo_ribbon', 'pit_ecdf', 'pit_ecdf_grouped', 'ribbon', 'ribbon_grouped', 'rootogram', 'scatter', 'scatter_avg', 'scatter_avg_grouped', 'stat', 'stat_2d', 'stat_freqpoly', 'stat_freqpoly_grouped', 'stat_grouped', 'violin_grouped'
+#> 'bars', 'bars_grouped', 'boxplot', 'calibration', 'calibration_grouped', 'calibration_overlay', 'calibration_overlay_grouped', 'dens', 'dens_overlay', 'dens_overlay_grouped', 'dots', 'ecdf_overlay', 'ecdf_overlay_grouped', 'error_binned', 'error_hist', 'error_hist_grouped', 'error_scatter', 'error_scatter_avg', 'error_scatter_avg_grouped', 'error_scatter_avg_vs_x', 'freqpoly', 'freqpoly_grouped', 'hist', 'intervals', 'intervals_grouped', 'km_overlay', 'km_overlay_grouped', 'loo_calibration', 'loo_calibration_grouped', 'loo_intervals', 'loo_pit_ecdf', 'loo_pit_overlay', 'loo_pit_qq', 'loo_ribbon', 'pit_ecdf', 'pit_ecdf_grouped', 'ribbon', 'ribbon_grouped', 'rootogram', 'rootogram_grouped', 'scatter', 'scatter_avg', 'scatter_avg_grouped', 'stat', 'stat_2d', 'stat_freqpoly', 'stat_freqpoly_grouped', 'stat_grouped', 'violin_grouped'
 
 ## get an overview of all valid types
 pp_check(fit, type = "xyz")
 #> Error in pp_check.brmsfit(fit, type = "xyz"): Type 'xyz' is not a valid ppc type. Valid types are:
-#> 'bars', 'bars_grouped', 'boxplot', 'dens', 'dens_overlay', 'dens_overlay_grouped', 'dots', 'ecdf_overlay', 'ecdf_overlay_grouped', 'error_binned', 'error_hist', 'error_hist_grouped', 'error_scatter', 'error_scatter_avg', 'error_scatter_avg_grouped', 'error_scatter_avg_vs_x', 'freqpoly', 'freqpoly_grouped', 'hist', 'intervals', 'intervals_grouped', 'km_overlay', 'km_overlay_grouped', 'loo_intervals', 'loo_pit_ecdf', 'loo_pit_overlay', 'loo_pit_qq', 'loo_ribbon', 'pit_ecdf', 'pit_ecdf_grouped', 'ribbon', 'ribbon_grouped', 'rootogram', 'scatter', 'scatter_avg', 'scatter_avg_grouped', 'stat', 'stat_2d', 'stat_freqpoly', 'stat_freqpoly_grouped', 'stat_grouped', 'violin_grouped'
+#> 'bars', 'bars_grouped', 'boxplot', 'calibration', 'calibration_grouped', 'calibration_overlay', 'calibration_overlay_grouped', 'dens', 'dens_overlay', 'dens_overlay_grouped', 'dots', 'ecdf_overlay', 'ecdf_overlay_grouped', 'error_binned', 'error_hist', 'error_hist_grouped', 'error_scatter', 'error_scatter_avg', 'error_scatter_avg_grouped', 'error_scatter_avg_vs_x', 'freqpoly', 'freqpoly_grouped', 'hist', 'intervals', 'intervals_grouped', 'km_overlay', 'km_overlay_grouped', 'loo_calibration', 'loo_calibration_grouped', 'loo_intervals', 'loo_pit_ecdf', 'loo_pit_overlay', 'loo_pit_qq', 'loo_ribbon', 'pit_ecdf', 'pit_ecdf_grouped', 'ribbon', 'ribbon_grouped', 'rootogram', 'rootogram_grouped', 'scatter', 'scatter_avg', 'scatter_avg_grouped', 'stat', 'stat_2d', 'stat_freqpoly', 'stat_freqpoly_grouped', 'stat_grouped', 'violin_grouped'
 
 ## get a plot without the observed data
 pp_check(fit, prefix = "ppd")

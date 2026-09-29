@@ -239,8 +239,8 @@ fit <- brm(time | cens(censored) ~ age + sex + (1 + age || patient),
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
 #> Chain 1: 
-#> Chain 1: Gradient evaluation took 3.2e-05 seconds
-#> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.32 seconds.
+#> Chain 1: Gradient evaluation took 3.7e-05 seconds
+#> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.37 seconds.
 #> Chain 1: Adjust your expectations accordingly!
 #> Chain 1: 
 #> Chain 1: 
@@ -257,15 +257,15 @@ fit <- brm(time | cens(censored) ~ age + sex + (1 + age || patient),
 #> Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 1: 
-#> Chain 1:  Elapsed Time: 1.412 seconds (Warm-up)
-#> Chain 1:                0.521 seconds (Sampling)
-#> Chain 1:                1.933 seconds (Total)
+#> Chain 1:  Elapsed Time: 1.004 seconds (Warm-up)
+#> Chain 1:                0.485 seconds (Sampling)
+#> Chain 1:                1.489 seconds (Total)
 #> Chain 1: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
 #> Chain 2: 
-#> Chain 2: Gradient evaluation took 2.3e-05 seconds
-#> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.23 seconds.
+#> Chain 2: Gradient evaluation took 2.6e-05 seconds
+#> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.26 seconds.
 #> Chain 2: Adjust your expectations accordingly!
 #> Chain 2: 
 #> Chain 2: 
@@ -282,15 +282,15 @@ fit <- brm(time | cens(censored) ~ age + sex + (1 + age || patient),
 #> Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 2: 
-#> Chain 2:  Elapsed Time: 1.388 seconds (Warm-up)
-#> Chain 2:                0.66 seconds (Sampling)
-#> Chain 2:                2.048 seconds (Total)
+#> Chain 2:  Elapsed Time: 1.017 seconds (Warm-up)
+#> Chain 2:                0.369 seconds (Sampling)
+#> Chain 2:                1.386 seconds (Total)
 #> Chain 2: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 3).
 #> Chain 3: 
-#> Chain 3: Gradient evaluation took 2.3e-05 seconds
-#> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.23 seconds.
+#> Chain 3: Gradient evaluation took 2.8e-05 seconds
+#> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.28 seconds.
 #> Chain 3: Adjust your expectations accordingly!
 #> Chain 3: 
 #> Chain 3: 
@@ -307,15 +307,15 @@ fit <- brm(time | cens(censored) ~ age + sex + (1 + age || patient),
 #> Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 3: 
-#> Chain 3:  Elapsed Time: 1.409 seconds (Warm-up)
-#> Chain 3:                0.666 seconds (Sampling)
-#> Chain 3:                2.075 seconds (Total)
+#> Chain 3:  Elapsed Time: 0.984 seconds (Warm-up)
+#> Chain 3:                0.482 seconds (Sampling)
+#> Chain 3:                1.466 seconds (Total)
 #> Chain 3: 
 #> 
 #> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 4).
 #> Chain 4: 
-#> Chain 4: Gradient evaluation took 2.3e-05 seconds
-#> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.23 seconds.
+#> Chain 4: Gradient evaluation took 2.4e-05 seconds
+#> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.24 seconds.
 #> Chain 4: Adjust your expectations accordingly!
 #> Chain 4: 
 #> Chain 4: 
@@ -332,15 +332,15 @@ fit <- brm(time | cens(censored) ~ age + sex + (1 + age || patient),
 #> Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 #> Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 #> Chain 4: 
-#> Chain 4:  Elapsed Time: 1.42 seconds (Warm-up)
-#> Chain 4:                0.659 seconds (Sampling)
-#> Chain 4:                2.079 seconds (Total)
+#> Chain 4:  Elapsed Time: 1.1 seconds (Warm-up)
+#> Chain 4:                0.492 seconds (Sampling)
+#> Chain 4:                1.592 seconds (Total)
 #> Chain 4: 
 
 ## predicted responses
 pp <- posterior_predict(fit)
 str(pp)
-#>  num [1:4000, 1:76] 1 72.63 4.04 25.86 133.72 ...
+#>  num [1:4000, 1:76] 161.24 4.56 20.58 2.71 20.54 ...
 #>  - attr(*, "dimnames")=List of 2
 #>   ..$ : NULL
 #>   ..$ : NULL
@@ -348,7 +348,7 @@ str(pp)
 ## predicted responses excluding the group-level effect of age
 pp <- posterior_predict(fit, re_formula = ~ (1 | patient))
 str(pp)
-#>  num [1:4000, 1:76] 12.698 90.363 0.398 106.435 165.407 ...
+#>  num [1:4000, 1:76] 93.79 14.89 34.25 19.37 3.91 ...
 #>  - attr(*, "dimnames")=List of 2
 #>   ..$ : NULL
 #>   ..$ : NULL
@@ -361,7 +361,7 @@ newdata <- data.frame(
 )
 pp <- posterior_predict(fit, newdata = newdata)
 str(pp)
-#>  num [1:4000, 1:2] 21.7 28.8 1.7 2.6 73.4 ...
+#>  num [1:4000, 1:2] 315.39 7.98 31.82 10.96 73.23 ...
 #>  - attr(*, "dimnames")=List of 2
 #>   ..$ : NULL
 #>   ..$ : NULL

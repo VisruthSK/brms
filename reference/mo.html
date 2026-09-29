@@ -13,11 +13,11 @@ evaluate its arguments – it exists purely to help set up a model."><meta prope
 
     <a class="navbar-brand me-2" href="../index.html">
       <!-- Add Stan logo -->
-      <img src="../reference/figures/logo.svg" class="stan-logo" alt="Stan blue hex logo">
+      <img src="../logo.svg" class="stan-logo" alt="Stan blue hex logo">
       brms
     </a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">2.23.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">2.23.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,14 +26,16 @@ evaluate its arguments – it exists purely to help set up a model."><meta prope
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../index.html" aria-label="Go to homepage"><span class="fa fa-home fa-lg"></span></a></li>
-<li class="nav-item"><a class="nav-link" href="../articles/index.html">Vignettes</a></li>
+<li class="nav-item"><a class="nav-link" href="../articles/index.html">Articles</a></li>
 <li class="active nav-item"><a class="nav-link" href="../reference/index.html">Functions</a></li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-other-packages" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Other Packages</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-other-packages"><li><a class="external-link dropdown-item" href="https://mc-stan.org/bayesplot">bayesplot</a></li>
     <li><a class="external-link dropdown-item" href="https://mc-stan.org/cmdstanr">cmdstanr</a></li>
+    <li><a class="external-link dropdown-item" href="https://mc-stan.org/loo">loo</a></li>
     <li><a class="external-link dropdown-item" href="https://mc-stan.org/posterior">posterior</a></li>
+    <li><a class="external-link dropdown-item" href="https://mc-stan.org/priorsense/">priorsense</a></li>
     <li><a class="external-link dropdown-item" href="https://mc-stan.org/projpred">projpred</a></li>
     <li><a class="external-link dropdown-item" href="https://mc-stan.org/rstan">rstan</a></li>
     <li><a class="external-link dropdown-item" href="https://mc-stan.org/rstanarm">rstanarm</a></li>
@@ -60,7 +62,7 @@ evaluate its arguments – it exists purely to help set up a model."><meta prope
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.svg" class="logo" alt=""><h1>Monotonic Predictors in <span class="pkg">brms</span> Models</h1>
-      <small class="dont-index">Source: <a href="https://github.com/paul-buerkner/brms/blob/master/R/formula-sp.R" class="external-link"><code>R/formula-sp.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/paul-buerkner/brms/blob/update-pkgdown-navbar/R/formula-sp.R" class="external-link"><code>R/formula-sp.R</code></a></small>
       <div class="d-none name"><code>mo.Rd</code></div>
     </div>
 
@@ -126,8 +128,8 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Gradient evaluation took 2.4e-05 seconds</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.24 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Gradient evaluation took 3e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.3 seconds.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Adjust your expectations accordingly!</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
@@ -144,15 +146,15 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:  Elapsed Time: 0.206 seconds (Warm-up)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                0.172 seconds (Sampling)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                0.378 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:  Elapsed Time: 0.188 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                0.166 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                0.354 seconds (Total)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Gradient evaluation took 1.8e-05 seconds</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.18 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Gradient evaluation took 2.3e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.23 seconds.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Adjust your expectations accordingly!</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
@@ -169,15 +171,15 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:  Elapsed Time: 0.205 seconds (Warm-up)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                0.179 seconds (Sampling)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                0.384 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:  Elapsed Time: 0.199 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                0.195 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                0.394 seconds (Total)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 3).</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Gradient evaluation took 2e-05 seconds</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.2 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Gradient evaluation took 2.1e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.21 seconds.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Adjust your expectations accordingly!</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
@@ -194,15 +196,15 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:  Elapsed Time: 0.201 seconds (Warm-up)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                0.191 seconds (Sampling)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                0.392 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:  Elapsed Time: 0.178 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                0.172 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                0.35 seconds (Total)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 4).</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Gradient evaluation took 1.8e-05 seconds</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.18 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Gradient evaluation took 2e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.2 seconds.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Adjust your expectations accordingly!</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
@@ -219,9 +221,9 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:  Elapsed Time: 0.201 seconds (Warm-up)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                0.182 seconds (Sampling)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                0.383 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:  Elapsed Time: 0.191 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                0.205 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                0.396 seconds (Total)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Family: gaussian </span>
@@ -233,18 +235,18 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Regression Coefficients:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Intercept    29.41      1.47    26.50    32.31 1.00     2609     2083</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> moincome     15.09      0.68    13.78    16.40 1.00     2420     2137</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Intercept    29.38      1.44    26.55    32.21 1.00     2276     2472</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome     15.12      0.66    13.85    16.42 1.00     1996     2448</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Monotonic Simplex Parameters:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>              Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[1]     0.64      0.04     0.57     0.71 1.00     3150     2489</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[2]     0.28      0.04     0.20     0.37 1.00     3851     2229</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[3]     0.08      0.04     0.01     0.15 1.00     2605     1540</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[1]     0.64      0.04     0.57     0.71 1.00     3559     2672</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[2]     0.28      0.04     0.20     0.37 1.00     2692     2459</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[3]     0.08      0.04     0.01     0.15 1.00     2164     1333</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Further Distributional Parameters:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sigma     7.04      0.51     6.12     8.14 1.00     2876     2192</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma     7.05      0.53     6.11     8.17 1.00     2771     2405</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> and Tail_ESS are effective sample size measures, and Rhat is the potential</span>
@@ -258,19 +260,303 @@ Statistical Psychology. doi:10.1111/bmsp.12195</p>
 <span class="r-in"><span><span class="co"># model interaction with other variables</span></span></span>
 <span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span><span class="op">)</span>, <span class="fl">100</span>, <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">fit2</span> <span class="op">&lt;-</span> <span class="fu"><a href="brm.html">brm</a></span><span class="op">(</span><span class="va">ls</span> <span class="op">~</span> <span class="fu">mo</span><span class="op">(</span><span class="va">income</span><span class="op">)</span><span class="op">*</span><span class="va">x</span>, data <span class="op">=</span> <span class="va">dat</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in `$&lt;-.data.frame`(`*tmp*`, "Ic", value = c(0, 1)):</span> replacement has 2 rows, data has 3</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Compiling Stan program...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Start sampling</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Gradient evaluation took 5.9e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.59 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:  Elapsed Time: 0.88 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                0.669 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                1.549 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Gradient evaluation took 5.8e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.58 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:  Elapsed Time: 0.884 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                0.624 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                1.508 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 3).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Gradient evaluation took 4.9e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.49 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:  Elapsed Time: 0.889 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                0.565 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                1.454 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 4).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Gradient evaluation took 4.3e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.43 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:  Elapsed Time: 0.831 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                0.544 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                1.375 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">fit2</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'fit2' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Family: gaussian </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Links: mu = identity </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Formula: ls ~ mo(income) * x </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    Data: dat (Number of observations: 100) </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          total post-warmup draws = 4000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Regression Coefficients:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Intercept      29.63      1.91    25.95    33.39 1.00     2065     2471</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> xb              1.50      2.82    -4.29     6.97 1.00     1783     2360</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> xc             -2.40      2.82    -8.17     2.92 1.00     1895     2569</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome       15.60      0.98    13.71    17.58 1.00     1526     2204</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xb    -1.27      1.51    -4.22     1.84 1.00     1443     1904</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xc    -0.40      1.52    -3.34     2.55 1.00     1711     2582</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Monotonic Simplex Parameters:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[1]        0.63      0.04     0.55     0.72 1.00     2638     3093</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[2]        0.29      0.04     0.20     0.37 1.00     2980     2929</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome1[3]        0.08      0.04     0.01     0.16 1.00     1961     1379</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xb1[1]     0.28      0.22     0.01     0.79 1.00     2625     2251</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xb1[2]     0.32      0.23     0.01     0.82 1.00     4237     2560</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xb1[3]     0.40      0.25     0.02     0.87 1.00     2924     2222</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xc1[1]     0.34      0.23     0.01     0.83 1.00     3014     1792</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xc1[2]     0.32      0.23     0.01     0.82 1.00     3896     2067</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincome:xc1[3]     0.35      0.23     0.01     0.85 1.00     3549     2068</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Further Distributional Parameters:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma     7.03      0.52     6.11     8.15 1.00     4209     3037</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> and Tail_ESS are effective sample size measures, and Rhat is the potential</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> scale reduction factor on split chains (at convergence, Rhat = 1).</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="conditional_effects.brmsfit.html">conditional_effects</a></span><span class="op">(</span><span class="va">fit2</span><span class="op">)</span>, points <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'fit2' not found</span>
+<span class="r-plt img"><img src="mo-3.png" alt="" width="700" height="433"></span>
+<span class="r-plt img"><img src="mo-4.png" alt="" width="700" height="433"></span>
+<span class="r-plt img"><img src="mo-5.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># ensure conditional monotonicity</span></span></span>
 <span class="r-in"><span><span class="va">fit3</span> <span class="op">&lt;-</span> <span class="fu"><a href="brm.html">brm</a></span><span class="op">(</span><span class="va">ls</span> <span class="op">~</span> <span class="fu">mo</span><span class="op">(</span><span class="va">income</span>, id <span class="op">=</span> <span class="st">"i"</span><span class="op">)</span><span class="op">*</span><span class="va">x</span>, data <span class="op">=</span> <span class="va">dat</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in `$&lt;-.data.frame`(`*tmp*`, "Ic", value = c(0, 1)):</span> replacement has 2 rows, data has 3</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Compiling Stan program...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Start sampling</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Gradient evaluation took 6.4e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.64 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:  Elapsed Time: 0.868 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                0.762 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1:                1.63 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 1: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Gradient evaluation took 5.1e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.51 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:  Elapsed Time: 0.858 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                0.696 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2:                1.554 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 2: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 3).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Gradient evaluation took 4.6e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.46 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:  Elapsed Time: 0.904 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                0.743 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3:                1.647 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 3: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 4).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Gradient evaluation took 4.3e-05 seconds</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.43 seconds.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Adjust your expectations accordingly!</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:  Elapsed Time: 0.84 seconds (Warm-up)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                0.679 seconds (Sampling)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4:                1.519 seconds (Total)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Chain 4: </span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">fit3</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'fit3' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Family: gaussian </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Links: mu = identity </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Formula: ls ~ mo(income, id = "i") * x </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    Data: dat (Number of observations: 100) </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          total post-warmup draws = 4000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Regression Coefficients:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                  Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Intercept           30.09      2.10    25.92    34.26 1.00     2321     2475</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> xb                   0.20      3.51    -6.99     6.95 1.00     2212     2178</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> xc                  -2.96      3.49    -9.85     3.84 1.00     1787     2417</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi       15.18      1.01    13.17    17.19 1.00     2003     2426</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb    -0.19      1.53    -3.18     2.94 1.00     2106     2075</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc     0.02      1.53    -2.97     2.92 1.00     1728     2287</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Monotonic Simplex Parameters:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi1[1]        0.65      0.04     0.57     0.72 1.00     4060</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi1[2]        0.28      0.04     0.20     0.37 1.00     2990</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi1[3]        0.07      0.04     0.01     0.15 1.00     2912</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb1[1]     0.65      0.04     0.57     0.72 1.00     4060</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb1[2]     0.28      0.04     0.20     0.37 1.00     2990</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb1[3]     0.07      0.04     0.01     0.15 1.00     2912</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc1[1]     0.65      0.04     0.57     0.72 1.00     4060</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc1[2]     0.28      0.04     0.20     0.37 1.00     2990</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc1[3]     0.07      0.04     0.01     0.15 1.00     2912</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      Tail_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi1[1]        2878</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi1[2]        2418</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi1[3]        1699</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb1[1]     2878</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb1[2]     2418</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xb1[3]     1699</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc1[1]     2878</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc1[2]     2418</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> moincomeidEQi:xc1[3]     1699</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Further Distributional Parameters:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma     7.07      0.52     6.14     8.17 1.00     3205     2871</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> and Tail_ESS are effective sample size measures, and Rhat is the potential</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> scale reduction factor on split chains (at convergence, Rhat = 1).</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="conditional_effects.brmsfit.html">conditional_effects</a></span><span class="op">(</span><span class="va">fit3</span><span class="op">)</span>, points <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'fit3' not found</span>
+<span class="r-plt img"><img src="mo-6.png" alt="" width="700" height="433"></span>
+<span class="r-plt img"><img src="mo-7.png" alt="" width="700" height="433"></span>
+<span class="r-plt img"><img src="mo-8.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>

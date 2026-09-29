@@ -45,7 +45,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/paul-buerkner/brms/blob/master/inst/CITATION)
+[`inst/CITATION`](https://github.com/paul-buerkner/brms/blob/update-pkgdown-navbar/inst/CITATION)
 
 Paul-Christian Bürkner (2017). brms: An R Package for Bayesian
 Multilevel Models Using Stan. Journal of Statistical Software, 80(1),

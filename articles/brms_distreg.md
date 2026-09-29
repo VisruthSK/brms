@@ -271,12 +271,12 @@ summary(fit_zinb2)
 
     Regression Coefficients:
                  Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    Intercept       -1.08      0.18    -1.43    -0.73 1.00     3285     2587
-    zi_Intercept    -0.96      0.27    -1.52    -0.47 1.00     3714     2465
-    persons          0.89      0.05     0.81     0.99 1.00     3182     2867
-    child           -1.18      0.10    -1.36    -0.99 1.00     3026     2634
-    camper           0.77      0.09     0.59     0.97 1.00     3731     2530
-    zi_child         1.22      0.28     0.69     1.80 1.00     3831     2795
+    Intercept       -1.08      0.18    -1.46    -0.72 1.00     2877     2655
+    zi_Intercept    -0.95      0.26    -1.50    -0.49 1.00     3322     2172
+    persons          0.89      0.05     0.80     0.99 1.00     2917     2485
+    child           -1.17      0.10    -1.36    -0.98 1.00     2897     2690
+    camper           0.77      0.09     0.59     0.96 1.00     4145     2580
+    zi_child         1.22      0.28     0.69     1.79 1.00     3511     2941
 
     Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
     and Tail_ESS are effective sample size measures, and Rhat is the potential
@@ -369,23 +369,23 @@ summary(fit_smooth1)
 
     Smoothing Spline Hyperparameters:
                      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    sds(sx1_1)           2.26      1.45     0.40     6.15 1.01      839      849
-    sds(sx2_1)          17.62      5.05    10.60    29.58 1.00      613     1084
-    sds(sigma_sx0_1)     0.86      0.79     0.04     2.95 1.01      750      941
+    sds(sx1_1)           2.28      1.50     0.38     6.07 1.00      946      992
+    sds(sx2_1)          17.83      4.82    10.67    29.74 1.01      623     1035
+    sds(sigma_sx0_1)     0.84      0.77     0.04     2.86 1.01      872     1079
 
     Multilevel Hyperparameters:
     ~fac (Number of levels: 4) 
                         Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    sd(Intercept)           4.74      2.07     2.26    10.52 1.01      775     1005
-    sd(sigma_Intercept)     0.16      0.20     0.01     0.72 1.00      597      818
+    sd(Intercept)           4.84      2.21     2.34    10.65 1.01      714      925
+    sd(sigma_Intercept)     0.15      0.20     0.00     0.65 1.00      423      584
 
     Regression Coefficients:
                     Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-    Intercept          15.69      2.21    11.06    19.91 1.00      653      914
-    sigma_Intercept     0.77      0.14     0.52     1.05 1.00      884      618
-    sx1_1               9.14      4.57    -0.47    18.65 1.00     1033      862
-    sx2_1              36.76     14.63     9.15    67.22 1.00     1191     1171
-    sigma_sx0_1         0.32      1.78    -3.41     4.05 1.00     1158     1002
+    Intercept          15.67      2.24    11.37    20.02 1.00      658      807
+    sigma_Intercept     0.77      0.12     0.55     1.03 1.01      693      563
+    sx1_1               9.05      4.55    -0.08    18.54 1.00     1127      967
+    sx2_1              38.04     14.55     9.90    68.33 1.00     1169     1001
+    sigma_sx0_1         0.36      1.81    -3.45     4.43 1.00      909     1093
 
     Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
     and Tail_ESS are effective sample size measures, and Rhat is the potential

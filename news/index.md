@@ -38,6 +38,60 @@
 
 #### Bug Fixes
 
+- Return `-Inf` rather than `NaN` from `log_sum_exp()` when both
+  arguments are `-Inf`, matching Stan. This also affects
+  [`nlf()`](https://paulbuerkner.com/brms/reference/brmsformula-helpers.md)
+  formulas that call it. Thanks to Ahmed Eldeeb.
+  ([\#1899](https://github.com/paul-buerkner/brms/issues/1899))
+- Evaluate the cdf and survival function of `frechet`,
+  `gen_extreme_value`, `discrete_weibull`, `asym_laplace`,
+  `inverse.gaussian`, `exgaussian` and the zero-inflated and hurdle
+  families on the log scale, so that truncated `log_lik` reaches them
+  too. Thanks to Ahmed Eldeeb.
+  ([\#1899](https://github.com/paul-buerkner/brms/issues/1899))
+- Preserve the matrix structure of factors in `newdata`, which is
+  required for matrix predictors of smooth terms such as `mrf`. Thanks
+  to Sebastian Weber.
+  ([\#1935](https://github.com/paul-buerkner/brms/issues/1935))
+- Stop rounding `posterior_predict` output to integers for discrete
+  models unless `output` is `"random"`, which collapsed probabilities
+  and densities to 0 or 1. Thanks to Ahmed Eldeeb.
+  ([\#1923](https://github.com/paul-buerkner/brms/issues/1923))
+- Include the lower bound in `posterior_predict` outputs
+  `"probability"`, `"pit"`, `"density"` and `"quantile"` for truncated
+  discrete models, matching the other post-processing methods. Thanks to
+  Ahmed Eldeeb.
+  ([\#1923](https://github.com/paul-buerkner/brms/issues/1923))
+- Include the lower bound when computing `posterior_epred` for truncated
+  discrete models, matching the generated Stan code and `log_lik`.
+  Thanks to Ahmed Eldeeb.
+  ([\#1923](https://github.com/paul-buerkner/brms/issues/1923))
+- Normalize truncated `log_lik` by `P(lb <= Y <= ub)` for integer
+  responses, matching the generated Stan code, so that `loo` and `waic`
+  agree with the model that was fitted. Thanks to Ahmed Eldeeb.
+  ([\#1903](https://github.com/paul-buerkner/brms/issues/1903))
+- Improve the numerical stability of `log_lik` for truncated and
+  interval-censored models, which previously returned `Inf` or `NaN`
+  whenever both bounds fell far into the same tail. Families whose CDF
+  is not itself accurate on the log scale are not yet covered. Thanks to
+  Ahmed Eldeeb.
+  ([\#1899](https://github.com/paul-buerkner/brms/issues/1899))
+- Warn when `log_lik` returns infinite values, which the existing check
+  for `NA` values did not catch.
+  ([\#1899](https://github.com/paul-buerkner/brms/issues/1899))
+- Align the R functions `log1m_exp()` and `log_diff_exp()` with their
+  definitions in Stan.
+  ([\#1899](https://github.com/paul-buerkner/brms/issues/1899))
+- Cox models now place the knots of the baseline hazard based on the
+  event times only instead of both event and censoring times. Models
+  fitted with brms 2.23.1 or earlier keep using their original knots in
+  post-processing. Thanks to Sebastian Weber.
+  ([\#1898](https://github.com/paul-buerkner/brms/issues/1898))
+- The basis of the baseline hazard of Cox models is now stored with the
+  response instead of with the predictor terms. As a result, `log_lik`,
+  `loo` and `kfold` applied to new data reuse the knots chosen at
+  fitting time also for non-linear formulas. Thanks to Sebastian Weber.
+  ([\#1898](https://github.com/paul-buerkner/brms/issues/1898))
 - [`kfold_predict()`](https://paulbuerkner.com/brms/reference/kfold_predict.md)
   supports now families whose predictions are not draws x observations
   matrices (e.g. categorical models).
@@ -64,6 +118,23 @@
   ([\#1767](https://github.com/paul-buerkner/brms/issues/1767)).
 - Enable updating argument `data2` for `brmsfit_multiple` objects.
   ([\#1776](https://github.com/paul-buerkner/brms/issues/1776))
+- Restore the mode parameterization of the `com_poisson` family on the
+  Stan side, which had switched to the classical parameterization in
+  [\#1765](https://github.com/paul-buerkner/brms/issues/1765) while the
+  R-side density functions did not, so that R-side post-processing no
+  longer disagrees with the sampled density whenever `shape != 1`. Also
+  correct the condition selecting the asymptotic normalizing constant,
+  which was left unchanged by that switch and so no longer described the
+  intended region. Models fitted with `com_poisson` and `shape != 1`
+  using affected versions were sampled under the classical
+  parameterization and should be refitted.
+  ([\#1927](https://github.com/paul-buerkner/brms/issues/1927))
+- Compare magnitudes when skipping unrelated levels in
+  `gr(..., cov = M)` terms with correlated coefficients, so that
+  negative entries of the covariance matrix’s Cholesky factor are no
+  longer silently discarded. This affected multivariate and random-slope
+  models using genomic or pedigree relationship matrices.
+  ([\#1939](https://github.com/paul-buerkner/brms/issues/1939))
 - Fix several other minor bugs.
 
 #### Other Changes
